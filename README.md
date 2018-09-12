@@ -49,14 +49,9 @@ Also I modified adversarial Loss functions, Discriminator and added hyper-parame
 where
 
 <p>
-
-$\mathcal{L_{adv}}{(G_{X{\to}Y}) = \left[ D_{Y}(G_{X{\to}Y}(x) - D_{Y}(G_{X{\to}Y}(x)) \right]  }$
-$\mathcal{L_{adv}}{(D_{Y}) = \left[ D_{Y}(y) - y \right] - {k_{t}}\left[ D_{Y}(G_{X{\to}Y}(x) - D_{Y}(G_{X{\to}Y}(x)) \right]  }$
-<br>
-${k_{t+1} = k_{t} + {\lambda_{k} \left[ \gamma \left( { D_{Y}(y)-y } \right)  - \mathcal{L}{(G_{X{\to}Y})} \right]  } }$
-${\mathcal{M}_{global} = {[D_{Y}(y)-y]} + {|  \gamma \left( { D_{Y}(y)-y } \right)  - \mathcal{L}{(G_{X{\to}Y})}   } |}$
-
+    <img align="left" src = "./image/loss_function_2.png" width="80%">
 </p>
+
 
 ## 4. Future Works
 
