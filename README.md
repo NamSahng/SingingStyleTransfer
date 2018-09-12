@@ -13,11 +13,15 @@ Whole architecture for changing singing style transfer is shown below [1]
 ## 2. Preprocess
 
 
-I downloaded songs from "Youtube" by using pytube library.(This might be illegal)
+First download songs from "Youtube" by using pytube library.(This might be illegal)
+
+For the vocal data I downloaded Park Hyo Shin and BolBBalGan Sachungi's songs. (about 15 songs each)
 
 For the separation of Singing Voice & Accompaniment I used pretrained deep U-net model. [2]
 
-Then I removed silence for the bigger receptive field on voices.
+Finally I removed silence for the bigger receptive field on voices.
+
+Data were downsampled to 16 kHz. For the sepearation normalized magnitude spectrogram were used and for the transfer we used 24 Mel-cepstral coefficients (MCEPs) were used.[2][3]
 
 
 
