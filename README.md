@@ -1,5 +1,7 @@
 # Singing Style Transfer
 
+
+
 ## 1. Abstract
 
 Whole architecture for changing singing style transfer is shown below [1]
