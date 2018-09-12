@@ -52,8 +52,8 @@ where
     <img align="left" src = "./image/loss_function_2.png" width="60%">
 </p>
 
-<br>
-<br>
+<br><br><br><br><br>
+
 ## 4. Future Works
 
 
