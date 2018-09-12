@@ -33,7 +33,7 @@ Also I modified adversarial Loss functions, Discriminator and added hyper-parame
 
 
 <p>
-    <img src = "./image/GD_network.png" width="70%">
+    <img src = "./image/GD_network.png" width="90%">
 </p>
 
 
