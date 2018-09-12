@@ -1,5 +1,3 @@
-# SingingStyleTransfer
-
 # Singing Style Transfer
 
 ## 1. Abstract
