@@ -49,10 +49,11 @@ Also I modified adversarial Loss functions, Discriminator and added hyper-parame
 where
 
 <p>
-    <img align="left" src = "./image/loss_function_2.png" width="80%">
+    <img align="left" src = "./image/loss_function_2.png" width="60%">
 </p>
 
-
+<br>
+<br>
 ## 4. Future Works
 
 
