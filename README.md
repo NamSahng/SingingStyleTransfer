@@ -21,7 +21,7 @@ For the separation of Singing Voice & Accompaniment I used pretrained deep U-net
 
 Finally I removed silence for the bigger receptive field on voices.
 
-Data were downsampled to 16 kHz. For the sepearation normalized magnitude spectrogram were used and for the transfer we used 24 Mel-cepstral coefficients (MCEPs) were used.[2][3]
+Datas were downsampled to 16 kHz. For the sepearation normalized magnitude spectrogram were used and for the transfer  24 Mel-cepstral coefficients (MCEPs) were used.[2][3]
 
 
 
