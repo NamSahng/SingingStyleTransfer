@@ -58,6 +58,9 @@ where
 
 ## 4. Future Works
 
+More powerful separation for vocal separation.
+
+Embed more information such as lyrics and adjust Tacotron. ex) Tacotron GAN "https://github.com/tmulc18/S2SCycleGAN"
 
 
 
