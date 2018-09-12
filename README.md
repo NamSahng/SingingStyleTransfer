@@ -1,6 +1,6 @@
 # Singing Style Transfer
 
-My works on Team Project on Eliceio team4: vocal-style-transfer (https://github.com/eliceio/vocal-style-transfer)
+My contribution on Team Project on Eliceio team4: vocal-style-transfer (https://github.com/eliceio/vocal-style-transfer)
 
 ## 1. Abstract
 
