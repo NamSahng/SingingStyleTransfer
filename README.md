@@ -2,6 +2,8 @@
 
 My contribution on Team Project on Eliceio team4: vocal-style-transfer (https://github.com/eliceio/vocal-style-transfer)
 
+I was in charge of transfering singing style by using separated vocal data(separated by pretrained Deep U net[2]) not by clean speech data.
+
 ## 1. Abstract
 
 Whole architecture for changing singing style transfer is shown below [1]
