@@ -2,7 +2,7 @@
 
 My contribution on Team Project on Eliceio team4: vocal-style-transfer (https://github.com/eliceio/vocal-style-transfer)
 
-I was in charge of transfering singing style by using separated vocal data(separated by pretrained Deep U net[2]) not by clean speech data.
+I was in charge of transfering singing style by using separated vocal data(separated by pretrained Deep U net[2]) not by clean speech data. And I adapted BE-GAN[4] training skill to Cycle-GAN-VC[3] refer to Singing Style Transfer C-BEGAN [1].
 
 ## 1. Abstract
 
