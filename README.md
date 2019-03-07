@@ -67,7 +67,7 @@
 
 
 - Modified Architectures: [code](https://github.com/NamSahng/SingingStyleTransfer/blob/master/CycleConsistency-BoundaryEquilibrium-GAN/module.py)
-    - <img src = "./image/GD_network.png" width="90%">
+    - <img src = "./image/Modified_Net.png" width="90%">
 
 
 ###  3-2.  Loss Function
