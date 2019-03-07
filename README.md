@@ -8,8 +8,8 @@
 ## 1. Abstract
 
 - Whole architecture for changing singing style transfer is shown below [1]
+    - <img src = "./image/Main_Architecture.JPG" width="60%">
 
-<img src = "./image/Main_Architecture.JPG" width="60%">
 
 ## 2. Preprocess
 
