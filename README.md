@@ -73,29 +73,18 @@
 ###  3-2.  Loss Function
 
 - Original Loss function (Cycle GAN Voice Converter[3]): [code](https://github.com/leimao/Voice_Converter_CycleGAN/blob/master/model.py) 
-    - $ \mathcal{L}_{full} = \mathcal{L}_{adv}(G_{X \to Y}, D_{Y}) +  \mathcal{L}_{adv}(G_{Y \to X}, D_{X}) + \lambda_{cyc}\mathcal{L}_{cyc}(G_{X \to Y}, G_{Y \to X}) + \mathcal{L}_{id}(G_{X \to Y},G_{Y \to X}) $
-    - where, 
-        - $ \mathcal{L}_{adv}(G_{X \to Y}, D_{Y}) = \mathbb{E}_{y \sim P_{Data}(y)}\left[ \log D_{Y}(y) \right] + \mathbb{E}_{x \sim P_{Data}(x)} \left[ \log (1-D_{Y}(G_{X \to Y}(x))) \right]  $ 
-        - $ \mathcal{L}_{cyc}(G_{X \to Y}, G_{Y \to X}) = \mathbb{E}_{x \sim P_{Data}(x)}\left[ \lVert G_{Y \to X}(G_{X \to Y}(x)) - x \rVert_{1} \right] + \mathbb{E}_{y \sim P_{Data}(y)}\left[ \lVert G_{X \to Y}(G_{Y \to X}(y)) - y \rVert_{1} \right] $
-        - $ \mathcal{L}_{id}(G_{X \to Y},G_{Y \to X}) =   \mathbb{E}_{y \sim P_{Data}(y)}\left[ \lVert G_{X \to Y}(y) - y \rVert_{1} \right] +  \mathbb{E}_{x \sim P_{Data}(x)}\left[ \lVert G_{Y \to X}(x) - x \rVert_{1} \right] $
+
+<img src = "./image/lf_1.png" width="90%">
         
 
 - BEGAN Loss function [4]: [code](https://github.com/carpedm20/BEGAN-tensorflow/blob/master/trainer.py)
-    - $ \mathcal{L}_{D} = \mathcal{L}(x) - k_{t}\mathcal{L}(G(z_{D})) \qquad\quad\quad $ for $\theta_{D} $
-    - $ \mathcal{L}_{G} = \mathcal{L}(G(z_{G})) \qquad\qquad\quad\quad\quad\space  $ for $ \theta_{G} $
-    - $ k_{t+1} = k_{t} + \lambda_{k}(\gamma\mathcal{L}(x) - \mathcal{L}(G(z_{G}))) \quad $ for each training step $ t $
-    - where, 
-        - for Equilibrium: $ \gamma = {{\mathbb{E} {\left[ \mathcal{L}(G(z)) \right]}  }\over{\mathbb{E} {\left[ \mathcal{L}(x) \right]}  }} $ 
-        - for Convergence measure: $  \mathcal{M}_{global} = \mathcal{L}(x) + \begin{vmatrix} \gamma \mathcal{L}(x) - \mathcal{L}(G(z_{G})) \end{vmatrix} $
+
+<img src = "./image/lf_2.png" width="90%">
 
 
 - Modified Loss function (Cycle Consistency Boundary Equilibrium GAN): [code](https://github.com/NamSahng/SingingStyleTransfer/blob/master/CycleConsistency-BoundaryEquilibrium-GAN/model.py)
-    - $ \mathcal{L}_{full} = \mathcal{L}_{adv}(G_{X \to Y}) + \mathcal{L}_{adv}(D_{Y})  +  \mathcal{L}_{adv}(G_{Y \to X}) + \mathcal{L}_{adv}(D_{X}) + \lambda_{cyc}\mathcal{L}_{cyc}(G_{X \to Y}, G_{Y \to X}) + \mathcal{L}_{id}(G_{X \to Y},G_{Y \to X}) $
-    - where, 
-        - $ \mathcal{L}_{adv}(G_{X \to Y}) =  \mathbb{E}_{x \sim P_{Data}(x)} \left[ D_{Y}(G_{X \to Y}(x)) - (G_{X \to Y}(x)) \right]  $ 
-        - $ \mathcal{L}_{adv}(D_{Y}) = \mathbb{E}_{y \sim P_{Data}(y)}\left[ D_{Y}(y) - y \right] -  k_{t} \left[ \mathbb{E}_{x \sim P_{Data}(x)} \left[ D_{Y}(G_{X \to Y}(x)) - (G_{X \to Y}(x)) \right] \right] $        
-        - for $ D_{Y} $ Equilibrium : $ k_{t+1} = k_{t} + \lambda_{k}\left[ \gamma\mathcal{L}(D_{Y}(y)-y) - \mathcal{L}(G_{X \to Y})\right] \quad $ for each training step $ t $
-        - for $ D_{Y} $ Convergence measure :  $ \mathcal{M}_{D_{Y}} =  \left[ D_{Y}(y) - y \right] + \begin{vmatrix} \left[ \gamma\mathcal{L}(D_{Y}(y)-y) - \mathcal{L}(G_{X \to Y})  \right] \end{vmatrix} $
+
+<img src = "./image/lf_3.png" width="90%">
 
 
 
