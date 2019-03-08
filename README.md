@@ -30,7 +30,7 @@
 ## 3. Cycle Consistency - Boundary Equilibrium GAN
 
 - Vocal Representation
-    - Datas were downsampled to 16 kHz. For the separation normalized magnitude spectrogram were used and for the transfer  24 Mel-cepstral coefficients (MCEPs) were used.[2][3]
+    - Datas were downsampled to 16 kHz. For the separation normalized magnitude spectrogram were used and for the transfer  24 Mel-cepstral coefficients ([MCEPs](https://github.com/eYSIP-2017/eYSIP-2017_Speech_Spoofing_and_Verification/wiki/Feature-Extraction-for-Speech-Spoofing)) were used.[2][3]
 
 
 - Since the singers we want to change don't sing same songs(Unpaired Data) I used Cycle-GAN for the transferring singing style.[1] Main model of Cycle-GAN is from "Cycle GAN Voice Converter".[3]
