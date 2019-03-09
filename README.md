@@ -67,6 +67,7 @@
 
 
 - Modified Architectures: [code](https://github.com/NamSahng/SingingStyleTransfer/blob/master/CycleConsistency-BoundaryEquilibrium-GAN/module.py)
+    - Identity-Mapping Loss and Cycle Loss are same with Original Loss Function's Identity-Mapping Loss and Cycle Loss.
     - <img src = "./image/Modified_Net.png" width="90%">
 
 
