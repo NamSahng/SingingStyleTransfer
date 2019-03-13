@@ -66,7 +66,7 @@
     - <img src = "./image/BEGAN GD.png" width="90%">
 
 
-- Modified Architectures: [code](https://github.com/NamSahng/SingingStyleTransfer/blob/master/CycleConsistency-BoundaryEquilibrium-GAN/module.py)
+- Modified Architectures(Cycle Consistency Boundary Equilibrium GAN): [code](https://github.com/NamSahng/SingingStyleTransfer/blob/master/CycleConsistency-BoundaryEquilibrium-GAN/module.py)
     - <img src = "./image/Modified_Net.png" width="90%">
 
 
