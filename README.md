@@ -94,6 +94,8 @@
 
 - More powerful separation for vocal separation.
 
+- Hyper-parameter tuning
+
 - Embed more information such as lyrics and use Tacotron as a Generator.(maybe?) ex) Tacotron GAN "https://github.com/tmulc18/S2SCycleGAN"
 
 
