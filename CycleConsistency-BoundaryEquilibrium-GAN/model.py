@@ -123,11 +123,17 @@ class CycleGAN(object):
 
         ######## 추가
 
+        # 0917
+        # self.balance_A = self.gamma_A * self.discriminator_loss_input_A_real - self.generator_loss_B2A
+        # self.balance_B = self.gamma_B * self.discriminator_loss_input_B_real - self.generator_loss_A2B        
+        
         self.balance_A = self.gamma_A * self.discriminator_loss_A - self.generator_loss_B2A
         self.balance_B = self.gamma_B * self.discriminator_loss_B - self.generator_loss_A2B
-
-        ###
-
+        
+        # 0917
+        #self.measure_A = self.discriminator_loss_input_A_real + tf.abs(self.balance_A)
+        #self.measure_B = self.discriminator_loss_input_B_real + tf.abs(self.balance_B)
+        
         self.measure_A = self.discriminator_loss_A + tf.abs(self.balance_A)
         self.measure_B = self.discriminator_loss_B + tf.abs(self.balance_B)
 
